@@ -7,7 +7,7 @@ COPY . /app
 # Update package lists
 RUN apt-get update
 
-
+# Install netcat (netcat-openbsd is a suitable alternative)
 RUN apt-get install -y  \
     netcat-openbsd \
     fortune-mod \
