@@ -1,0 +1,22 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: wisecow-ingress
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+spec:
+  tls:
+  - hosts:
+    - aedc77639d0a945ec96bb33d92fb827a-465486575.us-east-1.elb.amazonaws.com
+    secretName: wisecow-tls
+  rules:
+  - host: aedc77639d0a945ec96bb33d92fb827a-465486575.us-east-1.elb.amazonaws.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: wisecow-service
+            port:
+              number: 80

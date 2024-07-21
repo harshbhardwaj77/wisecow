@@ -1,0 +1,13 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: cert
+  
+spec:
+  # Secret names are always required.
+  secretName: tls-cert
+  dnsNames:  
+  -  aedc77639d0a945ec96bb33d92fb827a-465486575.us-east-1.elb.amazonaws.com
+  issuerRef:
+    name: letsencrypt-ci
+    kind: ClusterIssuer
