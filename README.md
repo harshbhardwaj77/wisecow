@@ -26,5 +26,7 @@ Deploy the wisecow application as a k8s app
 
 
 ## Deployment on EKS Cluster
-1. Created a AWS EKS cluster and deployed app there using Github Actions
+-  Created a AWS EKS cluster and deployed app there using Github Actions.
+-  I have created the EKS cluster using Terraform.
+-  Terraform main.tf file has been added in the repo. It can be used to quickly create an EKS cluster 
  
