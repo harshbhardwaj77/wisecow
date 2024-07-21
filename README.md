@@ -15,11 +15,11 @@ Deploy the wisecow application as a k8s app
 - Github Actions file is inside .github/workflows folder
 
 
-## [Challenge goal]: Enable secure TLS communication for the wisecow app. 
+## Enable secure TLS communication for the wisecow app. 
 - I have created 3 manifest files for TLS secure communication
 
-- cert-manager.yaml   ---  To setup a cert-manager
-- clusterIssuer.yaml  ---  To issue production level certificate 
+-  cert-manager.yaml   ---  To setup a cert-manager
+-  clusterIssuer.yaml  ---  To issue production level certificate 
 -  certificate.yaml    ---  To create a secret tls-cert
 
 -   Finally TLS was added to the ingress.yaml file
