@@ -22,7 +22,7 @@ Deploy the wisecow application as a k8s app
 - clusterIssuer.yaml  ---  To issue production level certificate 
 -  certificate.yaml    ---  To create a secret tls-cert
 
-   Finally TLS was added to the ingress.yaml file
+-   Finally TLS was added to the ingress.yaml file
 
 
 ## Deployment on EKS Cluster
